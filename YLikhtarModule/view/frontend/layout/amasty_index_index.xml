@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="Amasty_YLikhtarModule::css/beautiful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <container name="amasty_YLikhtar" htmlTag="div" htmlClass="main-page">
+                <block name="amasty_YLikhtar.hello"
+                       class="Amasty\YLikhtarModule\Block\Index"
+                       template="Amasty_YLikhtarModule::index.phtml">
+                </block>
+                <block name="amasty_YLikhtar.form"
+                       class="Amasty\YLikhtarModule\Block\Index"
+                       template="Amasty_YLikhtarModule::secondblock.phtml">
+                    <arguments>
+                        <argument name="css_class1" xsi:type="string">action primary</argument>
+                        <argument name="css_class2" xsi:type="string">form2</argument>
+                        <argument name="css_class3" xsi:type="string">myform</argument>
+                    </arguments>
+                    <block name="amasty_YLikhtar.additional"
+                           template="Amasty_YLikhtarModule::thirdblock.phtml">
+                    </block>
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
