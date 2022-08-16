@@ -1,0 +1,19 @@
+<?php
+/**
+ *@var \Magento\Framework\Escaper $escaper
+*@var \Amasty\YLikhtarModule\Block\Index $block**/
+?>
+
+<div class="<?= $escaper->escapeHtml($block->getData(key: 'css_class2')) ?>">
+    <form action="form2.php">
+        <div>
+            <input class="<?= $escaper->escapeHtml($block->getData(key: 'css_class3')) ?>" type="text" name="sku" required>
+            <input class="<?= $escaper->escapeHtml($block->getData(key: 'css_class3')) ?>" type="number" name="qty" required>
+            <div>
+                <?= $block->getChildHtml(''); ?>
+            </div>
+            <input class="<?= $escaper->escapeHtml($block->getData(key: 'css_class1')) ?>" type="button" value="Submit" name="password">
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,12 @@
+.page-wrapper {
+    border: 10px solid red;
+}
+.form2 {
+    padding: 10px;
+}
+input.myform {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 30%;
+}
